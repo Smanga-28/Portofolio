@@ -1,0 +1,126 @@
+/*
+ * Globals
+ */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.banner-wrap {
+  /* feel free to use your own img  */
+  background-image: url('./assets/IMG-20240922-WA0029.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.overlay {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.scrolling {
+  background: black;
+  opacity: 80%;
+  transition: all 0.5s;
+}
+
+/* Qualifications Section */
+.qualifications {
+  padding: 1rem 0;
+  background-color: white; /* Light gray background */
+  text-align: center;
+}
+
+.qualifications h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: black ;
+}
+
+.qualification-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.qualification-item {
+  background-color:white;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.qualification-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space between image and heading */
+}
+
+.qualification-item h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.qualification-item p {
+  font-size: 16px;
+  color: black;
+}
+
+
+
+/* Custom Button Style */
+.btn-custom-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  margin-top: 20px; /* Adjust this value as needed to create space between the image and the button */
+  text-align: center;
+}
+
+.btn-custom-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  color: #fff;
+}
